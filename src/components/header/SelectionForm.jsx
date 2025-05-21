@@ -93,11 +93,20 @@ export function SelectionForm() {
 }
 
 const FormContainer = styled.div`
-  width: 50%;
+  width: 561px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 950px) {
+    width: 482px;
+  }
+  @media (max-width: 530px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
 const ButtonsContainer = styled.div`
   display: flex;
@@ -106,6 +115,16 @@ const ButtonsContainer = styled.div`
   align-items: center;
   width: 32%;
   margin-bottom: 10px;
+  @media (max-width: 530px) {
+    width: 240px;
+    flex-direction: column;
+    justify-content: flex-start;
+    button {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+  }
 `;
 
 const ButtonApply = styled.button`

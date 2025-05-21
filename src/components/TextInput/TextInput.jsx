@@ -23,6 +23,10 @@ const Input = styled.input`
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
+  @media (max-width: 530px) {
+    width: 240px;
+    margin-bottom: 15px;
+  }
   &::placeholder {
     color: #b3b3b3;
   }

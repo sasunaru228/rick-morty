@@ -58,6 +58,10 @@ const SelectWrapper = styled.div`
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
+  @media (max-width: 530px) {
+    width: 240px;
+    margin-bottom: 15px;
+  }
 `;
 
 const Selected = styled.div`
